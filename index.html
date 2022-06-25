@@ -30,23 +30,23 @@
 
             <div id="navbarBasicExample" class="navbar-menu">
                 <div class="navbar-end">
-                    <a class="navbar-item" href = "#inicio">
+                    <a class="navbar-item" href="#inicio">
                         Início
                     </a>
 
-                    <a class="navbar-item" href = "#sobre">
+                    <a class="navbar-item" href="#sobre">
                         Sobre
                     </a>
 
-                    <a class="navbar-item" href = "#serviço">
+                    <a class="navbar-item" href="#serviço">
                         Serviços
                     </a>
 
-                    <a class="navbar-item" href = "#depoimentos">
+                    <a class="navbar-item" href="#depoimentos">
                         Depoimentos
                     </a>
 
-                    <a class="navbar-item" href = "#contato">
+                    <a class="navbar-item" href="#contato">
                         Contato
                     </a>
                 </div>
@@ -55,7 +55,7 @@
     </header>
 
     <!--Sessão Início-->
-    <section id = "inicio">
+    <section id="inicio">
         <div class="hero is-medium">
             <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aGFpcmRyZXNzZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
                 alt="Mulher sorrindo penteando outra mulher" />
@@ -64,12 +64,12 @@
             <p class="cabecalho title is-3">Saúde natural para os seus cabelos</p>
             <p class="texto">Um salão exclusivo em São Paulo, especializado em tratamentos naturais</p>
             <div class="texto">
-                <button class="button">Agendar um horário</button>
+                <button class="button js-modal-trigger" data-target="modal-js-example">Agendar um horário</button>
             </div>
         </div>
     </section>
     <hr>
-    <section id = "sobre">
+    <section id="sobre">
         <div class="hero is-medium">
             <img src="https://images.unsplash.com/photo-1559599101-f09722fb4948?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGFpcmRyZXNzZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
                 alt="3 mulheres sorrindo" />
@@ -97,7 +97,7 @@
     <hr>
 
     <!--Sessão Serviços-->
-    <section id = "serviço">
+    <section id="serviço">
         <div class="hero is-small">
             <p class="cabecalho title is-3 has-text-centered">Serviços</p>
             <div class="container">
@@ -143,7 +143,7 @@
     <hr>
 
     <!--Sessão depoimentos-->
-    <section id = "depoimentos">
+    <section id="depoimentos">
         <div class="hero is-small">
             <p class="cabecalho title is-3 has-text-centered">Depoimentos dos nossos clientes</p>
         </div>
@@ -226,7 +226,7 @@
     </section>
     <hr>
     <!--Sessão contato-->
-    <section id = "contato">
+    <section id="contato">
         <div class="hero is-small">
             <p class="cabecalho title is-3 has-text-centered">Contate-nos</p>
         </div>
@@ -239,6 +239,44 @@
         </div>
     </section>
 
+    <!--MODAL-->
+    <div id="modal-js-example" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="box">
+                <p class="cabecalho title is-4 has-text-centered">Realize o seu agendamento</p>
+                <hr>
+                <label class="texto_agenda">Nome: </label>
+                <input class="input is-rounded" type="text" placeholder="Insira seu nome">
+                <hr class = "hr1">
+                <div class="columns">
+                    <div class="column is-half">
+                        <label class="texto_agenda">Escolha o(s) serviço(s):</label>
+                        <form>
+                            <input type="checkbox" id="terapia" name="terapia" value="terapia">
+                            <label for="terapia"> Terapia capilar</label><br>
+                            <input type="checkbox" id="corte" name="corte" value="corte">
+                            <label for="corte"> Cortes</label><br>
+                            <input type="checkbox" id="tratamento" name="tratamento" value="tratamento">
+                            <label for="tratamento"> Tratamentos</label>
+                        </form>
+                    </div>
+                    <div class="column">
+                        <form>
+                            <label class="texto_agenda">Escolha uma data: </label>
+                            <input class="input is-rounded" type="date" id="data" name="data">
+                          </form>
+                    </div>
+                </div>
+                <button class="button is-small">Agendar</button>
+                <button class="button is-small">Cancelar</button>
+            </div>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+
+    <!--Footer-->
     <footer class="footer">
         <div class="content has-text-centered">
             <ul>

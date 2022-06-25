@@ -64,3 +64,9 @@ li {
 footer{
     margin-top: 20px;
 }
+
+.texto_agenda{
+    padding-top: 40px;
+    font-family: 'Roboto', sans-serif;
+    color: #0F241D
+}
